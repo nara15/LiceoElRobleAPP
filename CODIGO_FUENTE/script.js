@@ -17,6 +17,9 @@ liceoRobleApp.config(function($routeProvider) {
 
 		.when('/historia', {
 			templateUrl : 'pages/historia.html'
+		})
+		.when('/misionvision', {
+			templateUrl : 'pages/misionvision.html'
 		});
 	
 });
