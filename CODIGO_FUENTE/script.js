@@ -2,11 +2,10 @@
 var liceoRobleApp = angular.module('liceoRobleApp', ['ngRoute']);
 
 
-// configure our routes
+// Configuración de las rutas de la aplicación
 liceoRobleApp.config(function($routeProvider) {
 	$routeProvider
 
-		// route for the home page
 		.when('/', {
 			templateUrl : 'pages/home.html'
 		})
@@ -17,6 +16,10 @@ liceoRobleApp.config(function($routeProvider) {
 
 		.when('/historia', {
 			templateUrl : 'pages/historia.html'
+		})
+
+		.when('/contacto', {
+			templateUrl : 'pages/contacto.html'
 		});
 	
 });
