@@ -20,7 +20,7 @@ liceoRobleApp.config(function($routeProvider) {
 
 		.when('/misionvision', {
 			templateUrl : 'pages/misionvision.html'
-
+			})
 		.when('/contacto', {
 			templateUrl : 'pages/contacto.html'
 
