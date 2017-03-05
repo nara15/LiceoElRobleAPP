@@ -2,113 +2,110 @@ body
 {
 	background: url("../img/background.jpg") no-repeat fixed center center / 100% auto rgba(0, 0, 0, 0);
 }
-nav {
+nav 
+{
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 	position: absolute;
 	top: 0;
 	z-index: 500;
 }
-.top-nav {
+.top-nav 
+{
 	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 }
-.top-nav ul {
+.top-nav ul 
+{
 	padding: 0;
 }
-.logo {
+.logo 
+{
 	margin: 0;
 	text-align: center;
 	width: 100%;
 
 }
-.top-nav li a {
+.top-nav li a 
+{
 	font-size: 0.9rem;
 	text-transform: uppercase;
 }
-.top-nav .logo a, .top-nav .logo.active-item a {
+.top-nav .logo a, .top-nav .logo.active-item a 
+{
 	color: #fff;
 	font-size: 1.4rem;
 	font-weight: 400;
 	line-height: 1rem;
 }
-.top-nav .logo a strong {
+.top-nav .logo a strong 
+{
   font-weight: 800;
   line-height: 1.5;
 }
-.top-nav {
+.top-nav 
+{
 	text-align: center;
 }
-.top-nav li a:hover, .top-nav li.active-item a, .top-nav .logo.active-item a:hover {
+.top-nav li a:hover, .top-nav li.active-item a, .top-nav .logo.active-item a:hover 
+{
 	background: none repeat scroll 0 0 #00464f;
 }
-.top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo {
+.top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo
+ {
 	background: url("../img/escudo.png") no-repeat;
 	height: 150px;
-	/*background: none repeat scroll 0 0 #2fcbe0;*/
 }
-nav ul li ul li {
+nav ul li ul li 
+{
 	text-align: left;
 }
-.top-nav ul ul {
+.top-nav ul ul
+ {
 	background: none repeat scroll 0 0 rgb(0, 30, 34);
 }
-.top-nav li ul li a {
+.top-nav li ul li a 
+{
 	background: none repeat scroll 0 0 rgb(0, 30, 34);
 }
-#fourth-block h2 {
+#fourth-block h2
+ {
 	color: #fff;
 }
-#fourth-block p {
+#fourth-block p
+ {
 	color: #fff;
 }
-#first-block, #second-block, #third-block, #fourth-block {
+#first-block, #second-block, #third-block, #fourth-block
+ {
 	text-align: center;
 	padding: 4.5rem 0;
 }
-#carousel {
+
+#first-block 
+{
 	background: #fff;
 }
-#first-block {
-	background: #fff;
-}
-#second-block {
+#second-block 
+{
 	padding: 12.5rem 0;
 	padding-bottom: 3rem;
 	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 }
-#third-block {
+#third-block 
+{
 	background: #fff;
 }
-#fourth-block {
+#fourth-block 
+{
 	background: rgb(0, 30, 34);
 }
 footer {
-	background: none repeat scroll 0 0 #2fcbe0;
+	background: none repeat scroll 0 0 #0071BC;
 	padding: 1.5em 0;
 }
 footer p, footer a:link, footer a:visited, footer a:hover {
 	color: #fff;
 }
-.carousel-text {
-	display: block;
-	position: absolute;
-	top: 25%;
-	width: 100%;
-	z-index: 999;
-}
-.carousel-text h2 {
-	background: none repeat scroll 0 0 #fff;
-	color: rgb(0, 30, 34);
-	display: inline-block;
-	padding: 0.3125rem 0.625rem;
-	font-size: 2em;
-}
-.carousel-text p {
-	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
-	color: #fff;
-	display: inline-block;
-	font-size: 1.2rem;
-	padding: 0.625rem 0.8rem;
-}
+
 #first-block i {
 	background: none repeat scroll 0 0 #2fcbe0;
 	border-radius: 100px;
@@ -263,4 +260,5 @@ form.customform input, form.customform select, form.customform textarea {
   #second-block {
 	padding: 1.5rem 0;
   }
+ 
 }
