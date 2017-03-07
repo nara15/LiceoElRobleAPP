@@ -262,3 +262,131 @@ form.customform input, form.customform select, form.customform textarea {
   }
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#news-block
+{
+	text-align: center;
+	padding: 4.5rem 0;
+	padding-bottom: 3rem;
+	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
+}
+
+#news-block h1
+{
+	padding-bottom: 2.5rem;
+}
+
+.post-image img 
+{
+	margin: 0;
+	opacity: 1;
+	transition: opacity 0.20s linear 0s;
+	-o-transition: opacity 0.20s linear 0s;
+	-ms-transition: opacity 0.20s linear 0s;
+	-moz-transition: opacity 0.20s linear 0s;
+	-webkit-transition: opacity 0.20s linear 0s;
+}
+
+.post-date .date 
+{
+	font-size: 2rem;
+}
+
+.post-date 
+{
+	font-weight: 100;
+	opacity: 0.3;
+	
+}
+
+.right-align .post-text 
+{
+	float: right;
+	text-align: right;
+}
+
+.post-1 
+{
+	height: 50px;
+	background: none repeat scroll 0 0 #B71757;
+}
+
+#article-section article 
+{
+	background: none repeat scroll 0 0 #fff;
+}
+#article-section p 
+{
+	color: #637693;
+}
+#article-section h1, #article-section h2, #article-section h3, #article-section h4, #article-section h5, #article-section h6 {
+	color: #0b192f;
+	font-weight: 100;
+}
+#article-section h1 
+{
+	font-size: 3rem;
+	font-weight: 100;
+	margin-top: 0;
+}
+#article-section h3, #article-section h4, #article-section h5, #article-section h6 
+{
+	font-weight: 300;
+}
+#article-section .post-text 
+{
+	padding: 2rem 3rem 4rem;
+}
+#article-section .post-date p 
+{
+	color: #fff;
+}
+
+
+
+#article-section .post-text img 
+{
+	margin: 1.25rem 0;
+	max-width: 100%;
+	width: auto;
+}
+
+a.continue-reading, form.customform button {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #0b192f;
+	color: #0b192f;
+	display: inline-block;
+	font-size: 0.9rem;
+	font-weight: 400;
+	height: auto;
+	margin-top: 1.25rem;
+	padding: 0.625rem 1.25rem;
+	transition: background 0.20s linear 0s;
+	-o-transition: background 0.20s linear 0s;
+	-ms-transition: background 0.20s linear 0s;
+	-moz-transition: background 0.20s linear 0s;
+	-webkit-transition: background 0.20s linear 0s;
+}
+
+a.continue-reading:hover, form.customform button:hover {
+	background: none repeat scroll 0 0 #0b192f;
+	color: #fff;
+}
+
+
+
