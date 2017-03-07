@@ -24,6 +24,13 @@ liceoRobleApp.config(function($routeProvider) {
 		.when('/contacto', {
 			templateUrl : 'pages/contacto.html'
 
-		});
+		})
+		.when('/servicio', {
+			templateUrl : 'pages/servicio.html'
+
+		})
+		
+		
+		;
 	
 });
