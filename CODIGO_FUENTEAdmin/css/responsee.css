@@ -554,20 +554,3 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 
 .serviciosFont {
 }
-
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 2rem;
-}
-.lista{
-	
-	
-	 background: #cce5ff;
-    margin: 5px;
-}
