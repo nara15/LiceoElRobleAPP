@@ -1,0 +1,51 @@
+
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Noticias</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				<div class="line">
+			    	<form id="create_news_form" method="post">
+			    		<label for="newsName">Título de la noticia</label>
+    					<input type="text" id="newsName" name="newsName" placeholder="Título...">
+    					<hr>
+    					<label for="newsName">Sección a la que va dirigida</label>
+    					<ul>
+		                   <li ng-repeat="sections in sections"> <input type="checkbox" name="SeccionesAgregaNot" id={{sections.Seccion}}>  {{sections.Seccion}}</li> 
+		                </ul>
+		                </br>
+    					<label for="newsName">Si desea agregar una sección escribala abajo:</label>
+    					<input type="text" id="sectionPlace" name="newsName" placeholder="Sección...">
+    						<input class="button" type="button" onclick="agregarSecciones();" value="Agregar sección">
+    					</br>
+    					</br>
+    					<hr>
+    					<label for="newsName">Link:</label>
+    						<input type="text" id="link" name="link" placeholder="Link...">
+    					</br>
+    					<label for="">Fecha: </label> <input type="date" id="fecha" name="fechaNoticia"></br></br>
+    					<label for="">Imagen</label>
+						<input type="file" name="firstName"></br><br>
+			    		<label for="newsContent">Contenido de la notica</label><br><br>
+						<textarea ui-tinymce="tinymceOptions" name="detalleTexto" ng-model="tinymceModel"></textarea>
+						<button class="button add-button" ng-click="setContent()">Poner fecha completa</button></br>
+						<input class="button" type="button" onclick="agregarNoticia();" value="Agregar Noticia">
+						</br>
+    					</br>
+    					<label for="newsName">Secciones que desea eliminar:</label>
+    					<ul>
+		                   <li ng-repeat="sections in sections"> <input type="checkbox" name="SeccionesChecked" id= {{sections.Seccion}}>  {{sections.Seccion}}</li> 
+		                </ul>
+						<input class="button" type="button" onclick="eliminarSecciones()" value="Eliminar secciones">
+					</form>
+			    </div>
+			</div>
+		</div>
+    </div>
+
+</div>

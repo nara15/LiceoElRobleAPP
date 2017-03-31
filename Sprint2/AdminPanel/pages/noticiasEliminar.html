@@ -1,0 +1,29 @@
+
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Noticias</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				<div class="line">
+			    	<form id="create_news_form" method="post">
+			    		<label for="newsName">Eliminar Noticias</label>
+    					
+						</br>
+    					</br>
+    					<label for="newsName">Secciones que desea eliminar:</label>
+    					<ul>
+		                   <li ng-repeat="noticiasLinks in noticiasLinks"> <input type="checkbox" name="NoticiasChecked" id= {{noticiasLinks.Serv}}>  {{noticiasLinks.Serv}}</li> 
+		                </ul>
+						<input class="button" type="button" onclick="eliminarNoticias()" value="Eliminar noticias">
+					</form>
+			    </div>
+			</div>
+		</div>
+    </div>
+
+</div>

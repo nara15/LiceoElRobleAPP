@@ -1,0 +1,47 @@
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Servicios</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				
+				<h2>Lista de servicios actuales</h2>
+				<p>Seleccione el que desea eliminar y presione en Listo</p>
+				
+				
+				<ul>
+                   <li ng-repeat="serviceLinks in servicesLinks"> <input type="checkbox" name="ServiciosChecked" id= {{serviceLinks.Page}}>{{serviceLinks.Page}}</li> 
+                </ul>
+				
+				</b>
+				</br>
+				</br>
+				<input class="button" type="button" onclick="eliminarServicios()" value="Eliminar Servicio">
+				<hr>
+				<h2>Agregar Nuevo Servicio</h2>
+
+				<div class="line">
+			    	<form id="create_service_form" method="post">
+			    		<label for="serviceName">Nombre del servicio</label>
+		    			<input type="text" id="serviceName" name="serviceName" placeholder="Nombre del servicio...">
+						
+						<label for="">Imagen: </label>
+						<input id="service_image_input_field" type="file" name="image" accept="image/*" enctype="multipart/form-data"></br></br>
+						
+			    		<label for="">Detalle del servicio</label><br><br>
+			    		
+						<textarea name="contenidoTexto" ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+						
+						<button class="button add-button" ng-click="setContent()">Agregar fecha completa</button></br>
+						<input class="button" type="button" onclick="agregarServicios()" value="Agregar Servicio">
+					</form>
+			    </div>
+				
+			</div>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<header ng-controller="loadServicesToNavCTRL">
+ <nav>
+    <div class="line">
+       <div class="top-nav">              
+          <div class="logo hide-l">
+
+             <a href="index.html">Centro Educativo<br /><strong>El Roble</strong></a>
+
+             <a href="index.html">LICEO <br /><strong>EL ROBLE</strong></a>
+
+          </div>                  
+          <p class="nav-text">MENÚ</p>
+          <div class="top-nav s-12 l-5">
+             <ul class="right top-ul chevron">
+                <li><a href="#!">Inicio</a>
+                </li>
+                <li>
+                   <a >Nuestra Institución</a>
+                   <ul>
+                      <li><a href="#!misionvision">Misión y Visión</a></li>
+                      <li><a href="#!historia">Historia</a></li>
+                   </ul>
+                </li>
+                <li>
+                   <a>Servicios</a>           
+                   <ul>
+                      <li ng-repeat="serviceLinks in servicesLinks"><a href="#!servicio/{{$index+1}}">{{serviceLinks.Page}}</a></li> 
+                   </ul>
+                </li>
+             </ul>
+          </div>
+          <ul class="s-12 l-2">
+             <li class="logo hide-s hide-m">
+                <a href="#!"></a>
+             </li>
+          </ul>
+          <div class="top-nav s-12 l-5">
+             <ul class="top-ul chevron">
+                <li><a href="#!galeria">Galería</a>
+                </li>
+                <li><a href="">Noticias</a>
+                </li>
+                <li><a href="#!contacto">Contacto</a>
+                </li>
+             </ul> 
+          </div>
+       </div>
+    </div>
+ </nav>
+</header>
