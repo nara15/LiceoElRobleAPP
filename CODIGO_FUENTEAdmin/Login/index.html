@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+    <link rel="stylesheet" href="css/style.css">
+	<script src="CONTROLLER/script.js"></script>
+    <script src="CONTROLLER/controllers.js"></script>
+  
+</head>
+
+<body>
+	
+	<!--<?php
+	  if (strcmp($_COOKIE['logue'], 'yes')!=0) {
+	   echo"<META HTTP-EQUIV='REFRESH' CONTENT='0;URL=serv.php'> " ;
+	  }
+	?>-->
+	
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		<div class="login-form">
+			<form method="post" action="loggin.php">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Nombre de Usuario</label>
+					<input name="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Contraseña</label>
+					<input name="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input type="submit" name="Cambiar a tipo submit" class="button" value="Logearse">
+				</div>
+				<div class="hr"></div>
+				<label for="tab-1" class="tab">Liceo El Roble</label>
+				<label for="tab-1" class="tab"></label>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+  
+  
+</body>
+</html>

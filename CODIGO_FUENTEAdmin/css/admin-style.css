@@ -1,0 +1,131 @@
+html 
+{
+  box-sizing: border-box;
+}
+
+.admi-galery-column
+{
+    float: left;
+    width: 19.3%;
+    margin-bottom: 16px;
+    padding: 0 0.500em;
+}
+
+.card 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 320px;
+}
+
+.card-img
+{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-container 
+{
+  padding: 0 16px;
+}
+.card-container::after, .admi-galery-row::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-caption
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
+
+.tooltip {position: relative;}
+
+.tooltip .tooltiptext 
+{
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.button 
+{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 0.500em;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+.button:hover 
+{
+  background-color: #555;
+}
+
+#bntEliminar{background-color: #f44336;}
+#bntEliminar:hover {background: #da190b;}
+
+
+.textarea
+{
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    font-family: Arial;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 650px) {
+  .admi-galery-column {
+    width: 100%;
+    display: block;
+  }
+}

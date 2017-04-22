@@ -1,0 +1,30 @@
+<div>
+    <div id="head">
+        <div class="line">
+            <h1>Administración - Galería</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div class="line">
+            <form>
+                <div class="admi-galery-row">
+                    <div ng-repeat="x in gallery">
+                        <div class="admi-galery-column">
+                            <div class="card">
+                                <img class="card-img" ng-src="{{x.direccion}}"></img>
+                                <div class="card-container">
+                                    <div class="tooltip">
+                                      <span id="tooltip{{$index}}" class="tooltiptext">{{x.detalle}}</span>
+                                      <p id="img-caption{{$index}}" class="img-caption">{{x.detalle}}</p> 
+                                    </div>
+                                    <p><button ng-click="removeImage(x)" class="button" id="bntEliminar">Eliminar</button></p>
+                                    <p><button ng-click="modifyCaption(x, $index)" class="button" >Modificar descripcion</button></p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

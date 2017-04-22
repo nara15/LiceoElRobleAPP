@@ -1,0 +1,49 @@
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Servicios</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				
+				<h2>Lista de servicios actuales</h2>
+				<p>Seleccione el que desea editar y presione en Listo</p>
+				
+				
+				<ul>
+                   <li ng-repeat="serviceLinks in servicesLinks"> <input type="radio" name="ServicioChecked" value= {{serviceLinks.Page}}>{{serviceLinks.Page}}</li> 
+                </ul>
+				
+				</b>
+				</br>
+				</br>
+				<input class="button" type="button" onclick="obtenerServicio()" value="Editar Servicio">
+				<hr>
+				<h2>Editar Servicio</h2>
+
+				<div class="line">
+			    	<form id="create_service_form" method="post" action="../../MODEL/actualizarServicio.php" enctype="multipart/form-data">
+			    		<label for="serviceName">Nombre del servicio</label>
+		    			<input type="text" id="serviceName" name="serviceName" readonly>
+			    		<label for="serviceName">Nombre del Nuevo servicio</label>
+		    			<input type="text" id="serviceNameNuevo" name="serviceNameNuevo" placeholder="Nombre del servicio...">
+						
+						
+				</br>
+				</br>
+			    		<label for="">Detalle del servicio</label><br><br>
+			    		
+						<textarea id = "contenidoTexto" name="contenidoTexto" ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+						
+						
+						<input class="button" type="submit"  value="Modificar Servicio">
+					</form>
+			    </div>
+				
+			</div>
+		</div>
+    </div>
+</div>

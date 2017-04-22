@@ -1,0 +1,70 @@
+
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Noticias</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				<div class="line">
+			    	<form id="create_news_form" method="post" action="../../MODEL/agregarNoticias.php">
+			    		<label for="newsName">Título de la noticia</label>
+    					<input type="text" id="newsName" name="nombreNoticia" placeholder="Título...">
+    					
+    					
+    					<label for="newsName">¿Desea establecer la noticia como prioritaria?</label> </br>
+    					<input type="radio" name="Prioritario" value= "1"> Sí</br>
+    					<input type="radio" name="Prioritario" value= "0" checked> No
+    					
+    					</br>
+    					</br>
+    					<label for="newsName">Link:</label>
+    						<input type="text" id="link" name="link" placeholder="Link...">
+    					</br>
+    					<label for="">Fecha: </label> <input type="date" id="fecha" name="fechaNoticia"></br></br>
+    					<label for="">Imagen</label>
+						<input type="file" name="firstName"></br><br>
+			    		<label for="newsContent">Contenido de la notica</label><br><br>
+						<textarea ui-tinymce="tinymceOptions" name="detalleTexto" ng-model="tinymceModel"></textarea>
+						
+						<hr>
+						<div class = "contact-page">
+    					<p><i class="icon-facebook icon"></i></p><label for="newsName">¿Desea publicar en facebook?</label></br>
+							<input type="radio" name="Publicar" value= "1"> Sí</br>
+    						<input type="radio" name="Publicar" value= "0" checked> No
+						</div>
+						
+					<hr>
+    					<label for="newsName">Sección a la que va dirigida</label>
+    					<ul>
+		                   <li ng-repeat="sections in sections"> <input type="checkbox" name="SeccionesAgregaNot[]" value={{sections.Seccion}}>  {{sections.Seccion}}</li> 
+		                </ul>
+		                </br>
+						
+						
+						<input class="button" type="submit"  value="Agregar Noticia">
+				</form>
+				<hr>
+						</br>
+						<h3>Edición de secciones</h3>
+    					</br>
+    					<label for="newsName">Eliminar Secciones:</label>
+	    					<ul>
+			                   <li ng-repeat="sections in sections"> <input type="checkbox" name="SeccionesChecked" id= {{sections.Seccion}}>  {{sections.Seccion}}</li> 
+			                </ul>
+						<input class="button" type="button" onclick="eliminarSecciones()" value="Eliminar secciones">
+						</br>
+						<label for="newsName">Agregar una sección:</label>
+    						<input type="text" id="sectionPlace" name="newsName" placeholder="Sección nueva...">
+    						<input class="button" type="button" onclick="agregarSecciones();" value="Agregar sección">
+						
+					
+			    </div>
+			</div>
+		</div>
+    </div>
+
+</div>
