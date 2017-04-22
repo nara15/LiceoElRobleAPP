@@ -1,73 +1,30 @@
+<div id="myModal" class="modal">
+  <img class="modal-content" id="modal-img">
+  <span class="close" ng-click="closeZoom()">&times;</span>
+  <div id="caption">Hola</div>
+</div>
+
+
 <div>
 	<div id="head">
         <div class="line">
            <h1>Galeria</h1>
         </div>
     </div>
-     <div id="content">
+    <div id="content">
         <div class="line">
-           <div class="margin">
-               <div class="s-12 m-6 l-4">
-                  <img src="img/first-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/second-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/third-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/fourth-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/first-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/second-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/third-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/fourth-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/first-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/second-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/third-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-               <div class="s-12 m-6 l-4">
-                  <img src="img/fourth-small.jpg">      
-                  <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-               </div>
-           </div>
+            <div class="wrap">
+                <div ng-repeat="photo in photos">
+                    <div class="box">
+                        <div class="boxInner">
+                            <img class="hover-shadow cursor" ng-src="{{photo.direccion}}" ng-click="zoomImage(photo)"/>
+                            <div class="titleBox">
+                                Butterfly
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div>
-     </div>
+    </div>
 </div>

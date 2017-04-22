@@ -316,7 +316,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .m-11 {width:91.6666%;}
 .m-12 {width:100%;}
 .l-1 {width:8.3333%;}
-.l-2 {width:10.6666%;}
+.l-2 {width:16.6666%;}
 .l-five {width:20%;}
 .l-3 {width:25%;}
 .l-4 {width:33.3333%;}
@@ -423,6 +423,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   .m-offset-11 {margin-left:91.6666%;}
   .m-offset-12 {margin-left:100%;} 
   .l-1 {width:8.3333%;}
+  .l-1-1 {width:1.3333%;}
   .l-2 {width:16.6666%;}
   .l-five {width:20%;}
   .l-3 {width:25%;}
@@ -557,14 +558,26 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 
 
 .button {
-    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 2rem;
+    
 }
+
+.textP {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    width: 10rem;
+}
+
+
 .lista{
 	
 	
