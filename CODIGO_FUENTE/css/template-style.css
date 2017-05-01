@@ -51,7 +51,7 @@ nav
 }
 .top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo
  {
-	background: url("../img/escudo.png") no-repeat;
+	background: url("../img/escudo.png") no-repeat center ;
 	height: 150px;
 }
 nav ul li ul li 
@@ -165,7 +165,7 @@ a.button {
 	border-bottom: 1px solid #f0f0f0;
 }
 #content h2 {
-	font-size: 1.5rem;
+	font-size: 3.5rem;
 	font-weight: 400;
 	margin: 1rem 0 0.3rem;
 	text-transform: none;
@@ -221,6 +221,8 @@ form.customform input, form.customform select, form.customform textarea {
 
 
 
+
+
 @media screen and (max-width: 768px) {
   body {
   	background: none repeat scroll 0 0 rgb(0, 30, 34);
@@ -260,6 +262,7 @@ form.customform input, form.customform select, form.customform textarea {
   #second-block {
 	padding: 1.5rem 0;
   }
+  
  
 }
 
@@ -350,7 +353,7 @@ form.customform input, form.customform select, form.customform textarea {
 }
 #article-section .post-text 
 {
-	padding: 2rem 3rem 4rem;
+	padding: 2rem 3rem 8rem;
 }
 #article-section .post-date p 
 {
@@ -387,6 +390,25 @@ a.continue-reading:hover, form.customform button:hover {
 	background: none repeat scroll 0 0 #0b192f;
 	color: #fff;
 }
+
+
+
+@media screen and (max-width: 538px) {
+
+	#article-section .post-text
+	{
+    	padding-top: 1rem;
+	}
+	.post-text p 
+	{
+		font-size: 1rem;
+	}
+
+}
+
+
+
+
 
 
 

@@ -1,0 +1,31 @@
+
+<div>
+	<div id="head">
+		<div class="line">
+		   <h1>Noticias</h1>
+		</div>
+    </div>
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				<div class="line">
+			    	<form id="create_news_form" method="post">
+			    		<h2 for="newsName">Eliminar Noticias</h2>
+    					
+						</br>
+    					</br>
+    					<h3 for="newsName">Noticias disponibles:</h3>
+    					</br>
+    					<ul>
+		                   <li ng-repeat="noticiasLinks in noticiasLinks"> <input type="checkbox" name="NoticiasChecked" id= {{noticiasLinks.Nom}}>  {{noticiasLinks.Nom}}</li> 
+		                </ul>
+		                </br>
+						<input class="button" type="button" onclick="eliminarNoticias()" value="Eliminar noticias">
+					</form>
+			    </div>
+			</div>
+		</div>
+    </div>
+
+</div>

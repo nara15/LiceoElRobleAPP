@@ -1,0 +1,81 @@
+<div>
+	<div id="second-block">
+	    <div class="line">
+	       <div class="margin-bottom">
+	          <div class="margin">
+	             <article class="s-12 l-8 center">
+	                <h1>Bienvenido (a)</h1>
+	                <p class="margin-bottom"> Página administradora del centro educativo del Roble
+	                </p>  			
+	             </article>
+	          </div>
+	       </div>
+	    </div>
+	</div>
+
+	<div id="third-block">
+		<div class="line">
+		   <h2>Liceo El Roble</h2>
+		   <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		   </p>
+		   <div class="margin">
+		      <div class="s-12 m-6 l-3">
+		         <img src="img/first-small.jpg" alt="alternative text">     
+		         <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		         </p>
+		      </div>
+		      <div class="s-12 m-6 l-3">
+		         <img src="img/second-small.jpg" alt="alternative text">      
+		         <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		         </p>
+		      </div>
+		      <div class="s-12 m-6 l-3">
+		         <img src="img/third-small.jpg" alt="alternative text">      
+		         <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		         </p>
+		      </div>
+		      <div class="s-12 m-6 l-3">
+		         <img src="img/fourth-small.jpg" alt="alternative text">      
+		         <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		         </p>
+		      </div>
+		   </div>
+		</div>
+	</div>
+
+
+	<div id="news-block">
+        <div class="line">
+           <div class="margin-bottom">
+              <div class="margin">
+              	<h1>Las noticias más recientes</h1>  
+
+
+              	<section ng-repeat="c in news" id="article-section" class="line archive">
+              		<article class="margin-bottom">
+						<div class="post-1 ">            
+							<div class="post-date">
+								<p class="date">{{c.date}}</p> 
+							</div>
+						</div>
+						<div class="post-text"> 
+							<div class="s-12 l-4 post-image">                   
+								<a href="post-1.html"><img src="img/second-small.jpg" alt="Fashion"></a>              
+							</div>
+							<h2>{{c.title}}</h2>           
+							<p>
+								{{c.content}}
+							</p>            
+							<a class="continue-reading" href="post-1.html">Continuar leyendo</a>
+						</div>
+					</article>
+              	</section>
+                
+              </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+
+

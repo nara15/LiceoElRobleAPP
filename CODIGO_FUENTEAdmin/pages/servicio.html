@@ -1,61 +1,47 @@
-
-	
-	
+<div>
 	<div id="head">
-        <div class="line">
-           <h1>Servicios</h1>
-		   
-        </div>
+		<div class="line">
+		   <h1>Servicios</h1>
+		</div>
     </div>
-	
-	
-	
-	
-    <div id="content" class="left-align contact-page">
-        <div class="line">
-           		   		   
-		   
-		   <div class="margin s-12 ">
-		         <h2>Lista de servicios actuales- Seleccione el que desea eliminar y presione en Listo</h2>
-		         
-		            <p> <input type="checkbox"  id="Servicio 1">   Servicio 1</p>
-		            <p> <input type="checkbox"  id="Servicio 2">   Servicio 1</p>
-		            <p> <input type="checkbox"  id="Servicio 3">   Servicio 1</p>
-					<p> <input type="checkbox"  id="Servicio 4">   Servicio 1</p>
-		         
-		         <br />
-				  <input class="button" type="button" onclick="alert('Datos editados!')" value="Listo">
-				 </br>
-				 </br>
-				 <hr>
-				 <h2>Agregar Nuevo Servicio</h2>
-				   <p>    Nombre del Servicio</p>
-						<input type="text" name="firstname"></br>
-						</br>
-					<p>    Imagen</p>
-						<input type="file" name="firstname"></br>
-						</br>
-						<p>    Detalle del servicio:</p>
-				   <p class="margin-top-30">
-				          	<div class="s-12">
-							
-							<textarea id="myTextArea">Selecciona un servicio para editar su contenido</textarea>
-								
-							</div>
-				          </p>
-				          </br>
-				          </br>
-				   <input class="button" type="button" onclick="alert('Datos editados!')" value="Agregar">
-				  
-				  
-		        </div>
-		   
-		   
-			
-		   
-		   
-		   
-           
-			
+    
+    <div id="content" class="left-align">
+		<div class="line">
+			<div class="margin s-12 service-add">
+				
+				<h2>Lista de servicios actuales</h2>
+				<p>Seleccione el que desea eliminar y presione en Listo</p>
+				
+				
+				<ul>
+                   <li ng-repeat="serviceLinks in servicesLinks"> <input type="checkbox" name="ServiciosChecked" id= {{serviceLinks.Page}}>{{serviceLinks.Page}}</li> 
+                </ul>
+				
+				</b>
+				</br>
+				</br>
+				<input class="button" type="button" onclick="eliminarServicios()" value="Eliminar Servicio">
+				<hr>
+				<h2>Agregar Nuevo Servicio</h2>
+
+				<div class="line">
+			    	<form id="create_service_form" method="post" action="../../MODEL/agregarServicio.php" enctype="multipart/form-data">
+			    		<label for="serviceName">Nombre del servicio</label>
+		    			<input type="text" id="serviceName" name="serviceName" placeholder="Nombre del servicio...">
+						
+						<label for="">Imagen: </label>
+						<input id="service_image_input_field" type="file" name="fileToUpload" accept="image/*" alt="Imágen del servicio no disponible." ></br></br>
+						
+			    		<label for="">Detalle del servicio</label><br><br>
+			    		
+						<textarea name="contenidoTexto" ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+						
+						
+						<input class="button" type="submit"  value="Agregar Servicio">
+					</form>
+			    </div>
+				
+			</div>
+		</div>
     </div>
 </div>

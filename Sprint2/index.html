@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="liceoRobleApp">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Liceo EL ROBLE</title>
+
+      <!-- FRAMEWORK STYLE -->
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css"> 
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+     <!-- ANGULARJS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-ui-route.js"></script>
+      
+      <script src="CONTROLLER/script.js"></script>
+      <script src="CONTROLLER/controllers.js"></script>
+      
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+   </head>
+
+
+   <body class="size-1140">
+
+         <header ng-controller="loadServicesToNavCTRL">
+          <nav>
+             <div class="line">
+                <div class="top-nav">              
+                   <div class="logo hide-l">
+         
+                      <a href="index.html">Centro Educativo<br /><strong>El Roble</strong></a>
+         
+                      <a href="index.html">LICEO <br /><strong>EL ROBLE</strong></a>
+         
+                   </div>                  
+                   <p class="nav-text">MENÚ</p>
+                   <div class="top-nav s-12 l-5">
+                      <ul class="right top-ul chevron">
+                         <li><a href="#!">Inicio</a>
+                         </li>
+                         <li>
+                            <a >Nosotros</a>
+                            <ul>
+                               <li><a href="#!misionvision">Misión y Visión</a></li>
+                               <li><a href="#!historia">Historia</a></li>
+                            </ul>
+                         </li>
+                         <li>
+                            <a>Servicios</a>           
+                            <ul>
+                               <li ng-repeat="serviceLinks in servicesLinks"><a href="#!servicio/{{serviceLinks.Page}}">{{serviceLinks.Page}}</a></li> 
+                            </ul>
+                         </li>
+                      </ul>
+                   </div>
+                   <ul class="s-12 l-2">
+                      <li class="logo hide-s hide-m">
+                         <a href="#!"></a>
+                      </li>
+                   </ul>
+                   <div class="top-nav s-12 l-5">
+                      <ul class="top-ul chevron">
+                         <li><a href="#!galeria">Galería</a>
+                         </li>
+                         <li><a href="">Noticias</a>
+                         </li>
+                         <li><a href="#!contacto">Contacto</a>
+                         </li>
+                      </ul> 
+                   </div>
+                </div>
+             </div>
+          </nav>
+         </header>
+      
+      <!-- Vista principal de la aplicación -->
+      <section><div ng-view></div></section>
+      <!-- Se incluye el pie de página de la aplicación -->
+      <section ng-include='"pages/templates/footer.html"'></section>
+      <!-- Eventos del framework del frontend-->
+      <script type="text/javascript" src="js/responsee.js"></script> 
+      
+   </body>
+</html>

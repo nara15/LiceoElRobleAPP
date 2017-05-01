@@ -1,0 +1,14 @@
+{
+  "name": "LiceoElRoble",
+  "authors": [
+    "Jose Garita Chaves <garitajtec@gmail.com>"
+  ],
+  "description": "Aplicación web",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular-ui-tinymce": "^0.0.18"
+  }
+}
