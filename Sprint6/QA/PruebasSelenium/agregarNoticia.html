@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://liceoelroble.com/" />
+<title>agregarNoticia</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">agregarNoticia</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>link=Noticias</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newsName</td>
+	<td>Nueva Noticia Selenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=link</td>
+	<td>facebook.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fecha</td>
+	<td>02/12/07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>C:\Users\JoseR\Desktop\Captura.PNG</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='SeccionesAgregaNot[]'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#create_news_form &gt; input.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Liceo EL ROBLE - Administración</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
